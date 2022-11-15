@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69951fbd-9e78-4595-ae33-1a33e972da77" name="Changes" comment="lesson 1 fs hw">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/female/user1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/male/user2.json" beforeDir="false" />
-    </list>
+    <list default="true" id="69951fbd-9e78-4595-ae33-1a33e972da77" name="Changes" comment="lesson 1 fs hw path.join" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +46,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\evsei\IdeaProjects\node-june2022\male" />
       <recent name="C:\Users\evsei\IdeaProjects\node-june2022\female" />
     </key>
   </component>
@@ -64,7 +60,7 @@
       <updated>1668068381497</updated>
       <workItem from="1668179455702" duration="1054000" />
       <workItem from="1668275856910" duration="686000" />
-      <workItem from="1668332118548" duration="1497000" />
+      <workItem from="1668332118548" duration="1536000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 1 fs hw">
       <created>1668088747877</created>
@@ -94,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668090916301</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lesson 1 fs hw path.join">
+      <created>1668333653369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668333653369</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson 1 fs" />
     <MESSAGE value="lesson 1 fs hw" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 1 fs hw" />
+    <MESSAGE value="lesson 1 fs hw path.join" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 1 fs hw path.join" />
   </component>
 </project>
