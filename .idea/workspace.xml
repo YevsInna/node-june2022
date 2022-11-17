@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="lesson 2 express">
-      <change afterPath="$PROJECT_DIR$/.gitignor" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-2 end-points">
+      <change afterPath="$PROJECT_DIR$/services/file.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1668516313789</updated>
       <workItem from="1668516314946" duration="9524000" />
-      <workItem from="1668589710144" duration="9887000" />
+      <workItem from="1668589710144" duration="10538000" />
+      <workItem from="1668693566625" duration="4136000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -60,7 +62,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668526208763</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add gitignor">
+      <created>1668613900706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668613900706</updated>
+    </task>
+    <task id="LOCAL-00003" summary="hw-2 end-points">
+      <created>1668613957205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668613957205</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,6 +95,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson 2 express" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 2 express" />
+    <MESSAGE value="add gitignor" />
+    <MESSAGE value="hw-2 end-points" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-2 end-points" />
   </component>
 </project>
