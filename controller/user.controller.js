@@ -1,4 +1,4 @@
-const {fileService} = require('../services/file.service')
+const {fileService} = require('../services')
 
 module.exports = {
 

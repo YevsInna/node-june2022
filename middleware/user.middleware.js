@@ -1,11 +1,11 @@
 const ApiError = require('../error/ApiError');
-const {fileServices} = require('../services/file.service');
+const {fileService} = require('../services');
 
 module.exports = {
     isUserExist: async (req, res, next) => {
         try {
             const {userId} = req.params;
-            const users = await fileServices.render();
+            const users = await fileService.reader();
             const user = user.find((value) => value.id === +userId);
 
             if (!user) {

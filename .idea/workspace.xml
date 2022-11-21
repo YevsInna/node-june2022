@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-2 end-points with service">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error/ApiError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/user.middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roter/user.router.js" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-3 middleware">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/user.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/file.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/file.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/user.middleware.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
       <workItem from="1668589710144" duration="10538000" />
       <workItem from="1668693566625" duration="4477000" />
       <workItem from="1668794225189" duration="31000" />
-      <workItem from="1669019495750" duration="12372000" />
+      <workItem from="1669019495750" duration="17268000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -96,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668697829492</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hw-3 middleware">
+      <created>1669043858584</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669043858584</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +122,7 @@
     <MESSAGE value="add gitignor" />
     <MESSAGE value="hw-2 end-points" />
     <MESSAGE value="hw-2 end-points with service" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-2 end-points with service" />
+    <MESSAGE value="hw-3 middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-3 middleware" />
   </component>
 </project>
