@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-2 end-points">
-      <change afterPath="$PROJECT_DIR$/services/file.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-2 end-points with service">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error/ApiError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/user.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roter/user.router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/file.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/file.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lesson2-express" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -53,7 +64,9 @@
       <updated>1668516313789</updated>
       <workItem from="1668516314946" duration="9524000" />
       <workItem from="1668589710144" duration="10538000" />
-      <workItem from="1668693566625" duration="4136000" />
+      <workItem from="1668693566625" duration="4477000" />
+      <workItem from="1668794225189" duration="31000" />
+      <workItem from="1669019495750" duration="12372000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -76,11 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668613957205</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hw-2 end-points with service">
+      <created>1668697829492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668697829492</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -97,6 +120,7 @@
     <MESSAGE value="lesson 2 express" />
     <MESSAGE value="add gitignor" />
     <MESSAGE value="hw-2 end-points" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-2 end-points" />
+    <MESSAGE value="hw-2 end-points with service" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-2 end-points with service" />
   </component>
 </project>
