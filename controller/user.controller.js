@@ -1,4 +1,5 @@
-const {fileService} = require('../services')
+const {fileService} = require('../services');
+const User = require('../db/User')
 
 module.exports = {
 
