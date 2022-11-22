@@ -21,6 +21,7 @@ module.exports = {
                 age: userInfo.age,
                 id: users[users.length - 1].id + 1
             };
+            users.push(newUser);
 
             await fileService.writer(users);
 

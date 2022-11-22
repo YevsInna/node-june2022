@@ -6,7 +6,7 @@ module.exports = {
         try {
             const {userId} = req.params;
             const users = await fileService.reader();
-            const user = user.find((value) => value.id === +userId);
+            const user = users.find((value) => value.id === +userId);
 
             if (!user) {
                 throw new ApiError('User not found', 404)
@@ -15,7 +15,6 @@ module.exports = {
             req.users = users;
             req.user = user;
             next();
-
         } catch (e) {
             next(e)
         }
