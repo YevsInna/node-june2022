@@ -1,11 +1,10 @@
-const {fileService} = require('../services');
-const User = require('../db/User')
+const {userService} = require('../services');
 
 module.exports = {
 
     getAll: async (req, res, next) => {
         try {
-            const users = await fileService.reader();
+            const users = await userService.findByParams();
             res.json(users);
         } catch (e) {
             next(e)
@@ -15,17 +14,9 @@ module.exports = {
     create: async (req, res, next) => {
         try {
             const userInfo = req.body;
-            const users = await fileService.reader();
+            const user = await userService.create(userInfo);
 
-            const newUser = {
-                name: userInfo.name,
-                age: userInfo.age,
-                id: users[users.length - 1].id + 1
-            };
-
-            await fileService.writer(users);
-
-            res.status(201).json(newUser);
+            res.status(201).json(user);
         } catch (e) {
             next(e);
         }
@@ -41,14 +32,12 @@ module.exports = {
 
     update: async (req, res, next) => {
         try {
-            const {user, users, body} = req;
+            const newUserInfo = req.body;
+            const userId = req.params.userId;
 
-            const index = users.findIndex((value) => value.id === user.id);
-            users[index] = {...users[index], ...body};
+            const newUser = await userService.updateOne(userId, newUserInfo);
 
-            await fileService.writer(users);
-
-            res.status(201).json(users[index])
+            res.status(201).json(newUser)
 
         } catch (e) {
             next(e)
@@ -57,12 +46,7 @@ module.exports = {
 
     delete: async (req, res, next) => {
         try {
-            const {user,users} = req;
-
-            const index = users.findIndex((value) => value.id === user.id);
-            users.splice(index, 1);
-
-            await fileService.writer(users);
+            await userService.delete(req.params.userId)
 
             res.sendStatus(204)
         } catch (e) {

@@ -1,22 +1,21 @@
 const ApiError = require('../error/ApiError');
-const {fileService} = require('../services');
-
+const {userService} = require('../services');
+const User = require('../db/User');
+const {userNormalizator} = require("../helper");
 
 module.exports = {
     isUserExist: async (req, res, next) => {
         try {
             const {userId} = req.params;
-            const users = await fileService.reader();
-            const user = user.find((value) => value.id === +userId);
+            const user = await userService.findOneByParams({_id: userId});
 
             if (!user) {
                 throw new ApiError('User not found', 404)
             }
 
-            req.users = users;
+            // req.users = users;
             req.user = user;
             next();
-
         } catch (e) {
             next(e)
         }
@@ -24,18 +23,28 @@ module.exports = {
 
     isCreateBodyValid: (req, res, next) => {
         try {
-            const {name, age} = req.body;
+            const {name, age, email} = req.body;
             if (!name || name.length < 3 || typeof name !== 'string') {
                 throw new ApiError('Wrong name', 400);
             }
+
+            if (!age || age < 0 || Number.isNaN(+age)) {
+                throw new ApiError('Wrong age', 400);
+            }
+
+            if (!email || !email.includes('@')) {
+                throw new ApiError('Wrong email', 400);
+            }
+
             next();
         } catch (e) {
             next(e)
         }
     },
+
     isUpdateBodyValid: (req, res, next) => {
         try {
-            const {name, age} = req.body;
+            const {name, age, email} = req.body;
 
             if (name && (name.length < 3 || typeof name !== 'string')) {
                 throw new ApiError('Wrong name', 400);
@@ -44,21 +53,46 @@ module.exports = {
             if (age && (age < 0 || Number.isNaN(+age))) {
                 throw  new ApiError('Wrong age', 400);
             }
+
+            if (email && !email.includes('@')) {
+                throw new ApiError('Wrong email', 400);
+            }
+
             next();
         } catch (e) {
             next(e)
         }
     },
 
-    isIdValid: (req, res, next) => {
+    userNormalizator: (req, res, next) => {
         try {
-            const {userId} = req.params;
-            if (userId < 0 || Number.isNaN(+userId)) {
-                throw  new ApiError('Id is not valid', 400);
-            }
+            let {name, email} = req.body;
+            if (name) req.body.name = userNormalizator.name(name);
+            if (email) req.body.email = email.toLowerCase();
+
             next();
         } catch (e) {
             next(e)
+        }
+    },
+
+    checkIsEmailUnique: async (req, res, next) => {
+        try {
+            const {email} = req.body;
+
+            if (!email) {
+                throw new ApiError('Email not present', 400);
+            }
+
+            const user = await userService.findOneByParams({email});
+
+            if (user) {
+                throw new ApiError('User with this email already exists', 409);
+            }
+
+            next();
+        } catch (e) {
+            next(e);
         }
     }
 };

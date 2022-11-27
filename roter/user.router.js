@@ -8,24 +8,24 @@ router.get('/', controller.getAll);
 router.post(
     '/',
     middleware.isCreateBodyValid,
+    middleware.userNormalizator,
+    middleware.checkIsEmailUnique,
     controller.create);
 
 router.get(
     '/:userId',
-    middleware.isIdValid,
     middleware.isUserExist,
     controller.getById);
 
 router.put(
     '/:userId',
-    middleware.isIdValid,
     middleware.isUpdateBodyValid,
+    middleware.userNormalizator,
     middleware.isUserExist,
     controller.update);
 
 router.delete(
     '/:userId',
-    middleware.isIdValid,
     middleware.isUserExist,
     controller.delete);
 
