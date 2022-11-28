@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-3 middleware">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/user.normalizator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/user.service.js" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-4 mongoose">
+      <change afterPath="$PROJECT_DIR$/controller/car.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/Car.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roter/car.router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roter/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/car.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/user.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roter/user.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/roter/user.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/file.service.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/evsei/IdeaProjects/node-june2022/services",
     "nodejs_package_manager_path": "npm"
   },
   "keyToStringList": {
@@ -59,6 +59,13 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\evsei\IdeaProjects\node-june2022\services" />
+      <recent name="C:\Users\evsei\IdeaProjects\node-june2022\controller" />
+      <recent name="C:\Users\evsei\IdeaProjects\node-june2022\roter" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +80,8 @@
       <workItem from="1668794225189" duration="31000" />
       <workItem from="1669019495750" duration="17311000" />
       <workItem from="1669105208536" duration="3789000" />
-      <workItem from="1669557496000" duration="10036000" />
+      <workItem from="1669557496000" duration="10117000" />
+      <workItem from="1669642182021" duration="4460000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -124,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669111092679</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="hw-4 mongoose">
+      <created>1669576136865</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669576136865</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +174,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/middleware/user.middleware.js</url>
           <line>44</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
