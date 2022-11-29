@@ -16,8 +16,9 @@ app.use('/cars', carRouter);
 
 app.listen(configs.PORT, async () => {
     await mongoose.connect(configs.MONGO_URL)
-    console.log(`Server listen ${configs.PORT}`);
+     console.log(`Server listen ${configs.PORT}`);
 });
+
 
 
 
