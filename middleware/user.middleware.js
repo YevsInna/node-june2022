@@ -2,6 +2,7 @@ const ApiError = require('../error/ApiError');
 const {userService} = require('../services');
 const User = require('../db/User');
 const {userNormalizator} = require("../helper");
+const { commonValidator, userValidator } = require('../validators');
 
 module.exports = {
     isUserExist: async (req, res, next) => {
@@ -93,6 +94,36 @@ module.exports = {
             next();
         } catch (e) {
             next(e);
+        }
+    },
+
+    isNewUserValid: async (req, res, next) =>{
+        try {
+            const validate = userValidator.newUserValidator.validate(req.body);
+
+            if (validate.error){
+                throw new ApiError(validate.error.message, 400);
+            }
+
+            req.body = validate.value;
+            next()
+        }catch (e) {
+         next(e)
+        }
+    },
+
+    isUserIdValid: async (req,res,next)=>{
+        try {
+            const {userId} = req.params;
+            const  validate = commonValidator.idValidator.validate(userId);
+
+            if (validate.error){
+                throw new ApiError(validate.error.message, 400)
+            }
+
+            next()
+        }catch (e) {
+            next(e)
         }
     }
 };

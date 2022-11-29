@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-4 mongoose - сarSchema">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-4 mongoose - change MONGO_URL">
+      <change afterPath="$PROJECT_DIR$/config/regexp.enum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators/common.validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators/user.validator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/user.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roter/user.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/roter/user.router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson3-middleware" />
+        <entry key="$PROJECT_DIR$" value="lesson4-mongoose" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +82,7 @@
       <workItem from="1669642182021" duration="4544000" />
       <workItem from="1669715163226" duration="18000" />
       <workItem from="1669715363799" duration="61000" />
-      <workItem from="1669715492142" duration="2351000" />
+      <workItem from="1669715492142" duration="9078000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -150,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669662383289</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="hw-4 mongoose - change MONGO_URL">
+      <created>1669727884138</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669727884138</updated>
+    </task>
+    <task id="LOCAL-00012" summary="hw-4 mongoose - change MONGO_URL">
+      <created>1669727914241</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669727914241</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,14 +196,15 @@
     <MESSAGE value="hw-3 middleware" />
     <MESSAGE value="hw-4 mongoose" />
     <MESSAGE value="hw-4 mongoose - сarSchema" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-4 mongoose - сarSchema" />
+    <MESSAGE value="hw-4 mongoose - change MONGO_URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-4 mongoose - change MONGO_URL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/middleware/user.middleware.js</url>
-          <line>44</line>
+          <line>45</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
