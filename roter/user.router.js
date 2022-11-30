@@ -16,15 +16,16 @@ router.post(
 router.get(
     '/:userId',
     middleware.isUserIdValid,
-    middleware.isUserExist,
+    middleware.getUserDynamically('userId', 'params', '_id'),
     userController.getById);
 
 router.put(
     '/:userId',
     middleware.isUserIdValid,
+    middleware.isEditUserValid,
     // middleware.isUpdateBodyValid,
     // middleware.userNormalizator,
-    middleware.isUserExist,
+    middleware.getUserDynamically('userId', 'params', '_id'),
     userController.update);
 
 router.delete(

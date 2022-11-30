@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-4 mongoose - change MONGO_URL">
-      <change afterPath="$PROJECT_DIR$/config/regexp.enum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validators/common.validator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validators/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validators/user.validator.js" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-5 joi.validate">
+      <change afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/OAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/auth.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roter/auth.router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/oauth.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators/auth.validator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/middleware/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/user.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roter/car.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/roter/car.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/roter/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roter/user.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/roter/user.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validators/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/validators/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validators/user.validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/validators/user.validator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +93,9 @@
       <workItem from="1669642182021" duration="4544000" />
       <workItem from="1669715163226" duration="18000" />
       <workItem from="1669715363799" duration="61000" />
-      <workItem from="1669715492142" duration="9078000" />
+      <workItem from="1669715492142" duration="9312000" />
+      <workItem from="1669736022642" duration="194000" />
+      <workItem from="1669800124157" duration="13934000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -168,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669727914241</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="hw-5 joi.validate">
+      <created>1669735720342</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669735720342</updated>
+    </task>
+    <task id="LOCAL-00014" summary="hw-5 joi.validate">
+      <created>1669735735246</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669735735246</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,14 +224,15 @@
     <MESSAGE value="hw-4 mongoose" />
     <MESSAGE value="hw-4 mongoose - сarSchema" />
     <MESSAGE value="hw-4 mongoose - change MONGO_URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-4 mongoose - change MONGO_URL" />
+    <MESSAGE value="hw-5 joi.validate" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-5 joi.validate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/middleware/user.middleware.js</url>
-          <line>45</line>
+          <line>62</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

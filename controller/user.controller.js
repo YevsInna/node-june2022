@@ -1,4 +1,4 @@
-const {userService} = require('../services');
+const {userService, oauthService} = require('../services');
 
 module.exports = {
 
@@ -13,8 +13,8 @@ module.exports = {
 
     create: async (req, res, next) => {
         try {
-            const userInfo = req.body;
-            const user = await userService.create(userInfo);
+            const hashPassword = await oauthService.hashPassword(req.body.password)
+            const user = await userService.create({...req.body, password: hashPassword});
 
             res.status(201).json(user);
         } catch (e) {
