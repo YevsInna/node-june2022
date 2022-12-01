@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 require('dotenv').config();
-const configs = require('./config/config')
+const configs = require('./config/config');
 const { carRouter, userRouter} = require("./roter");
 const authRouter = require('./roter/auth.router')
 
