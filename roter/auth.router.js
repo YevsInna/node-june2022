@@ -11,4 +11,9 @@ router.post(
     userMiddleware.getUserDynamically('email'),
     authController.login);
 
+router.post(
+    '/refresh',
+    authMiddleware.checkRefreshToken,
+    authController.refresh);
+
 module.exports = router;
