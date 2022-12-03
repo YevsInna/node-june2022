@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-5 auth,login">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-5 token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/OAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/OAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/oauth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/oauth.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +78,8 @@
       <workItem from="1669715492142" duration="9312000" />
       <workItem from="1669736022642" duration="194000" />
       <workItem from="1669800124157" duration="14179000" />
-      <workItem from="1669883692960" duration="4203000" />
+      <workItem from="1669883692960" duration="4233000" />
+      <workItem from="1670064778591" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -192,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669836769380</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="hw-5 token">
+      <created>1669895677458</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669895677458</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +224,8 @@
     <MESSAGE value="hw-4 mongoose - change MONGO_URL" />
     <MESSAGE value="hw-5 joi.validate" />
     <MESSAGE value="hw-5 auth,login" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-5 auth,login" />
+    <MESSAGE value="hw-5 token" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-5 token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
