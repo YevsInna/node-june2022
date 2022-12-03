@@ -4,6 +4,11 @@ module.exports = {
     findByParams: async (filter = {})=>{
         return Car.find(filter);
     },
+
+    findOneByIdWithUser: async (carId) => {
+        return Car.findById(carId).populate('user');
+    },
+
     // findOneByParams: async (filter = {})=>{
     //    return Car.findOne(filter);
     // },

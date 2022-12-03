@@ -19,15 +19,18 @@ module.exports = {
         } catch (e) {
             next(e);
         }
-    }
+    },
 
-    // getById: async (req, res, next) => {
-    //     try {
-    //         res.json(req.car);
-    //     } catch (e) {
-    //         next(e)
-    //     }
-    // },
+    findOne: async (req, res, next) => {
+        try {
+            const {carId} = req.params;
+            const car = await carService.findOneByIdWithUser(carId);
+
+            res.json(car);
+        } catch (e) {
+            next(e)
+        }
+    },
 
     // update: async (req, res, next) => {
     //     try {
