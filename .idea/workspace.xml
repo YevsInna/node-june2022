@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-5 access, refresh token">
-      <change afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-6 email">
+      <change afterPath="$PROJECT_DIR$/email-templates/container.pug.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,8 @@
       <workItem from="1669883692960" duration="4233000" />
       <workItem from="1670064778591" duration="605000" />
       <workItem from="1670177726779" duration="1743000" />
-      <workItem from="1670234602984" duration="6547000" />
+      <workItem from="1670234602984" duration="6575000" />
+      <workItem from="1670258819920" duration="4125000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -222,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670243747598</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="hw-6 email">
+      <created>1670246408013</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1670246408013</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +263,8 @@
     <MESSAGE value="hw-5 auth,login" />
     <MESSAGE value="hw-5 token" />
     <MESSAGE value="hw-5 access, refresh token" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-5 access, refresh token" />
+    <MESSAGE value="hw-6 email" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-6 email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
