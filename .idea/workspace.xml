@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-5 token">
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-5 access, refresh token">
+      <change afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roter/user.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/roter/user.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson4-mongoose" />
+        <entry key="$PROJECT_DIR$" value="lesson5-auth" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,7 +87,7 @@
       <workItem from="1669883692960" duration="4233000" />
       <workItem from="1670064778591" duration="605000" />
       <workItem from="1670177726779" duration="1743000" />
-      <workItem from="1670234602984" duration="4235000" />
+      <workItem from="1670234602984" duration="6547000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -212,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670182749693</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="hw-5 access, refresh token">
+      <created>1670243747598</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670243747598</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +254,8 @@
     <MESSAGE value="hw-5 joi.validate" />
     <MESSAGE value="hw-5 auth,login" />
     <MESSAGE value="hw-5 token" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-5 token" />
+    <MESSAGE value="hw-5 access, refresh token" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-5 access, refresh token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
