@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-6 email">
-      <change afterPath="$PROJECT_DIR$/email-templates/container.pug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/container.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/forgot-pass.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/welcome.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-templates/container.pug.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/email-action.enum.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -40,22 +43,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/evsei/IdeaProjects/node-june2022/services&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/evsei/IdeaProjects/node-june2022/services",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\evsei\IdeaProjects\node-june2022\services" />
@@ -88,7 +92,8 @@
       <workItem from="1670064778591" duration="605000" />
       <workItem from="1670177726779" duration="1743000" />
       <workItem from="1670234602984" duration="6575000" />
-      <workItem from="1670258819920" duration="4125000" />
+      <workItem from="1670258819920" duration="4147000" />
+      <workItem from="1670406566425" duration="4515000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -230,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670246408013</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="hw-6 email">
+      <created>1670268307639</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670268307639</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
