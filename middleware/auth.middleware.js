@@ -29,12 +29,12 @@ module.exports = {
 
             oauthService.checkToken(accessToken);
 
-            const tokenInfo = await OAuth.findOne({ accessToken });
+            const tokenInfo = await OAuth.findOne({accessToken});
 
             if (!tokenInfo) {
                 throw new ApiError('Token not valid', 401);
             }
-
+            req.tokenInfo = tokenInfo;
             next();
         } catch (e) {
             next(e);
@@ -51,7 +51,7 @@ module.exports = {
 
             oauthService.checkToken(refreshToken, tokenTypeEnum.refreshToken);
 
-            const tokenInfo = await OAuth.findOne({ refreshToken });
+            const tokenInfo = await OAuth.findOne({refreshToken});
 
             if (!tokenInfo) {
                 throw new ApiError('Token not valid', 401);
