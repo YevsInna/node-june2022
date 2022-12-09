@@ -27,6 +27,11 @@ module.exports = {
             refreshToken
         }
     },
+generateActionToken: (actionType, dataToSign = {})=>{
+      const actionToken = jwt.sign(dataToSign, SECRET_ACCESS, {expiresIn: '7d'});
+
+      return actionToken;
+},
 
     checkToken: (token = '', tokenType = tokenTypeEnum.accessToken) => {
         try {
