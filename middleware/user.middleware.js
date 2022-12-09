@@ -147,6 +147,7 @@ module.exports = {
     isUserIdValid: async (req, res, next) => {
         try {
             const {userId} = req.params;
+
             const validate = commonValidator.idValidator.validate(userId);
 
             if (validate.error) {

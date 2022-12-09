@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-6 logout" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-6 send email">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/user.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -291,7 +296,9 @@
     <MESSAGE value="hw-6 email" />
     <MESSAGE value="hw-6 loguot" />
     <MESSAGE value="hw-6 logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-6 logout" />
+    <MESSAGE value="hw-7 forgot pass" />
+    <MESSAGE value="hw-6 send email" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-6 send email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

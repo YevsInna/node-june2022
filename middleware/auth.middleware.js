@@ -1,6 +1,6 @@
 const {authValidator} = require('../validators')
 const ApiError = require("../error/ApiError");
-const {oauthService} = require("../services");
+const {oauthService, emailService} = require("../services");
 const {tokenTypeEnum} = require("../enum");
 const OAuth = require('../db/OAuth');
 
@@ -21,6 +21,8 @@ module.exports = {
 
     checkAccessToken: async (req, res, next) => {
         try {
+            await emailService.sendEmail('evseinka@gmail.com');
+
             const accessToken = req.get('Authorization');
 
             if (!accessToken) {

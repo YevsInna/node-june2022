@@ -26,7 +26,8 @@ const sendEmail = async (receiverMail, emailAction, locals = {}) => {
         }
     });
 
-    Object.assign(locals || {}, {frontendURL: 'google.com'})
+    Object.assign(locals || {}, {frontendURL: 'google.com'});
+
     const html = await templateRenderer.render(templateInfo.templateName, locals);
 
     return transporter.sendMail({
