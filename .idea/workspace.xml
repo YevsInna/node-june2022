@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-6 logout">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/oauth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/oauth.service.js" afterDir="false" />
-    </list>
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-7 generateActionToken" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -266,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670577094368</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="hw-7 generateActionToken">
+      <created>1670586816266</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670586816266</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +306,8 @@
     <MESSAGE value="hw-6 email" />
     <MESSAGE value="hw-6 loguot" />
     <MESSAGE value="hw-6 logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-6 logout" />
+    <MESSAGE value="hw-7 generateActionToken" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-7 generateActionToken" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
