@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-6 send email">
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-6 error wrong template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-templates/container.pug" beforeDir="false" afterPath="$PROJECT_DIR$/email-templates/container.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -260,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670505305405</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="hw-6 error wrong template">
+      <created>1670615157971</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670615157971</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +303,8 @@
     <MESSAGE value="hw-6 logout" />
     <MESSAGE value="hw-7 forgot pass" />
     <MESSAGE value="hw-6 send email" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-6 send email" />
+    <MESSAGE value="hw-6 error wrong template" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-6 error wrong template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
