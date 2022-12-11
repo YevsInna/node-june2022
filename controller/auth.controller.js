@@ -1,6 +1,6 @@
 const {oauthService, emailService} = require("../services");
 const OAuth = require('../db/OAuth');
-const {WELCOME} = require("../config/email-action.enum");
+const {WELCOME, FORGOT_PASS} = require("../config/email-action.enum");
 
 module.exports = {
     login: async (req, res, next) => {
@@ -40,7 +40,7 @@ module.exports = {
         }
     },
 
-    logout: async (req, res, next) => {
+       logout: async (req, res, next) => {
         try {
             const {accessToken} = req.tokenInfo;
 

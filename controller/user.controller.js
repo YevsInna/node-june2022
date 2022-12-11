@@ -1,5 +1,5 @@
 const {userService, oauthService, emailService} = require('../services');
-const {WELCOME} = require("../config/email-action.enum");
+const {WELCOME, FORGOT_PASS} = require("../config/email-action.enum");
 
 module.exports = {
 
@@ -26,8 +26,6 @@ module.exports = {
     getById: async (req, res, next) => {
         try {
             const {user, body} = req;
-
-            await emailService.sendEmail('evseinka@gmail.com', WELCOME, {userName: user.name});
 
             res.json(req.user);
         } catch (e) {
