@@ -21,7 +21,7 @@ const sendEmail = async (receiverMail, emailAction, locals = {}) => {
         throw new ApiError('Wrong template', 500);
     }
     const templateRenderer = new EmailTemplates({
-        view: {
+        views: {
             root: path.join(process.cwd(), 'email-templates')
         }
     });
