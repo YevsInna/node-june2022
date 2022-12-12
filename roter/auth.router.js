@@ -28,14 +28,14 @@ router.post(
 
 router.post(
     '/password/forgot',
-    authMiddleware.checkActionToken,
-    authController.setPasswordAfterForgot
+    userMiddleware.getUserDynamically('email'),
+    authController.forgotPassword
 );
 
 router.put(
     '/password/forgot',
-    userMiddleware.getUserDynamically,
-    authController.forgotPassword
+    authMiddleware.checkActionToken,
+    authController.setPasswordAfterForgot
 )
 
 module.exports = router;

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-7 generateActionToken">
-      <change afterPath="$PROJECT_DIR$/config/token-action.enum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-7 forgot pass">
+      <change afterPath="$PROJECT_DIR$/db/ActionToken.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-templates/container.pug" beforeDir="false" afterPath="$PROJECT_DIR$/email-templates/container.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/email-templates/forgot-pass.pug" beforeDir="false" afterPath="$PROJECT_DIR$/email-templates/forgot-pass.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roter/auth.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/roter/auth.router.js" afterDir="false" />
@@ -98,6 +97,7 @@
       <workItem from="1670406566425" duration="4820000" />
       <workItem from="1670424936093" duration="2368000" />
       <workItem from="1670577086430" duration="1302000" />
+      <workItem from="1670856401873" duration="9299000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -281,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670586816266</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="hw-7 forgot pass">
+      <created>1670778671348</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1670778671348</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +325,8 @@
     <MESSAGE value="hw-6 loguot" />
     <MESSAGE value="hw-6 logout" />
     <MESSAGE value="hw-7 generateActionToken" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-7 generateActionToken" />
+    <MESSAGE value="hw-7 forgot pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-7 forgot pass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -327,18 +335,6 @@
           <url>file://$PROJECT_DIR$/middleware/user.middleware.js</url>
           <line>62</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/services/oauth.service.js</url>
-          <line>52</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/middleware/auth.middleware.js</url>
-          <line>23</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

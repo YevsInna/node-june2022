@@ -14,6 +14,7 @@ const {
 const tokenTypes = require('../config/token-action.enum')
 
 module.exports = {
+
     hashPassword: (password) => bcrypt.hash(password, 10),
 
     comparePassword: async (hashPassword, password) => {
@@ -54,8 +55,8 @@ module.exports = {
         try {
             let secretWord = '';
 
-            if (tokenType === tokenTypeEnum.accessToken) secret = SECRET_ACCESS;
-            else if (tokenType === tokenTypeEnum.refreshToken) secret = SECRET_REFRESH;
+            if (tokenType === tokenTypeEnum.accessToken) secretWord = SECRET_ACCESS;
+            else if (tokenType === tokenTypeEnum.refreshToken) secretWord = SECRET_REFRESH;
 
             return jwt.verify(token, secretWord);
         } catch (e) {

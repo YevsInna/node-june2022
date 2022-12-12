@@ -16,6 +16,7 @@ const sendEmail = async (receiverMail, emailAction, locals = {}) => {
     });
 
     const templateInfo = emailTemplates[emailAction];
+    console.log(templateInfo)
 
     if (!templateInfo){
         throw new ApiError('Wrong template', 500);
@@ -26,7 +27,8 @@ const sendEmail = async (receiverMail, emailAction, locals = {}) => {
         }
     });
 
-    Object.assign(locals || {}, {frontendURL: 'google.com'})
+    Object.assign(locals || {}, {frontendURL: 'google.com'});
+
     const html = await templateRenderer.render(templateInfo.templateName, locals);
 
     return transporter.sendMail({
