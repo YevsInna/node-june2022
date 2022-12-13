@@ -1,12 +1,12 @@
 const nodemailer = require('nodemailer');
-const EmailTemplates = require('email-templates');
+const hbs = require('nodemailer-express-handlebars');
 const path = require('path');
 
-const {NO_REPLY_EMAIL_PASSWORD, NO_REPLY_EMAIL} = require('../config/config');
+const {NO_REPLY_EMAIL_PASSWORD, NO_REPLY_EMAIL, FRONTEND_URL} = require('../config/config');
 const emailTemplates = require('../email-templates');
 const ApiError = require("../error/ApiError");
 
-const sendEmail = async (receiverMail, emailAction, locals = {}) => {
+const sendEmail = async (receiverMail, emailAction, context = {}) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -16,26 +16,32 @@ const sendEmail = async (receiverMail, emailAction, locals = {}) => {
     });
 
     const templateInfo = emailTemplates[emailAction];
-    console.log(templateInfo)
 
-    if (!templateInfo){
+    if (!templateInfo?.subject || !templateInfo.templateName) {
         throw new ApiError('Wrong template', 500);
     }
-    const templateRenderer = new EmailTemplates({
-        views: {
-            root: path.join(process.cwd(), 'email-templates')
-        }
-    });
 
-    Object.assign(locals || {}, {frontendURL: 'google.com'});
+    const options = {
+        viewEngine: {
+            defaultLayout: 'main',
+            layoutsDir: path.join(process.cwd(), 'email-templates', 'layouts'),
+            partialsDir: path.join(process.cwd(), 'email-templates', 'partials'),
+            extname: '.hbs'
+        },
+        extName: '.hbs',
+        viewPath: path.join(process.cwd(), 'email-templates', 'views'),
+    };
 
-    const html = await templateRenderer.render(templateInfo.templateName, locals);
+    transporter.use('compile', hbs(options));
+
+    context.frontendURL = FRONTEND_URL;
 
     return transporter.sendMail({
         from: 'No reply',
         to: receiverMail,
         subject: templateInfo.subject,
-        html
+        template: templateInfo.templateName,
+        context
     })
 };
 
