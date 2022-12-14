@@ -77,7 +77,7 @@ module.exports = {
 
             await ActionToken.create({ token: actionToken, tokenType: FORGOT_PASSWORD, _user_id: _id })
             await emailService.sendEmail('evseinka@gmail.com', FORGOT_PASS, {url: forgotPassFrontUrl, userName: name});
-            console.log(actionToken)
+            console.log(forgotPassFrontUrl)
             res.json('ok')
         } catch (e) {
             next(e)
