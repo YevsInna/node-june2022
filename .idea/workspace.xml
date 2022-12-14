@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-7 forgot pass url doesn't work">
-      <change afterPath="$PROJECT_DIR$/email-templates/layouts/main.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/email-templates/partials/footer.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/email-templates/partials/header.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/email-templates/views/forgot-pass.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/email-templates/views/welcome.hbs" afterDir="false" />
+    <list default="true" id="0ecface2-1b9d-498e-8381-dad84647449e" name="Changes" comment="hw-7 forgot pass hbs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-templates/container.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-templates/forgot-pass.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-templates/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-templates/welcome.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +90,8 @@
       <workItem from="1670424936093" duration="2368000" />
       <workItem from="1670577086430" duration="1302000" />
       <workItem from="1670856401873" duration="9942000" />
-      <workItem from="1670943681277" duration="6774000" />
+      <workItem from="1670943681277" duration="6802000" />
+      <workItem from="1671016307389" duration="1333000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 2 express">
       <created>1668526208763</created>
@@ -307,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670944325040</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="hw-7 forgot pass hbs">
+      <created>1670957483974</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1670957483974</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +342,8 @@
     <MESSAGE value="hw-7 generateActionToken" />
     <MESSAGE value="hw-7 forgot pass" />
     <MESSAGE value="hw-7 forgot pass url doesn't work" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw-7 forgot pass url doesn't work" />
+    <MESSAGE value="hw-7 forgot pass hbs" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw-7 forgot pass hbs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
